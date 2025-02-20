@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('fonfo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.producto {
+    width: 300px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    min-height: 200px; 
+}
+
+.producto img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+.precio {
+    font-size: 18px;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004095);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-toggle {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.btn-toggle:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: scale(1.05);
+}
+
+.btn-toggle:active {
+    transform: scale(0.95);
+}
+
+.categorias {
+    display: none;  /* Ocultamos el menú por defecto */
+    flex-direction: column;  /* Asegura que los botones estén en columna */
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.categorias.active {
+    display: flex;  /* Mostramos el menú cuando tiene la clase 'active' */
+}
+
+.btn-categoria {
+    width: 100%;
+    padding: 10px 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-categoria:hover {
+    background: linear-gradient(135deg, #0056b3, #004095);
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    .productos-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-container {
+        grid-template-columns: 1fr;
+    }
+}
