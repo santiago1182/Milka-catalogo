@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="icon" href="tienda.png" type="image/png">
+    <title>Ver Productos</title>
+</head>
+<body>
+    
+    <header>
+        <button id="toggleCategorias" class="btn-toggle">Cambiar Sección</button>
+        <div class="categorias" id="categorias">
+            <a href="bazar.html" class="btn-categoria">Bazar</a>
+            <a href="cocina.html" class="btn-categoria">cocina</a>
+            <a href="electronica.html" class="btn-categoria">Electrónica</a>
+            <a href="herramientas.html" class="btn-categoria">Herramientas</a>
+            <a href="otros-productos.html" class="btn-categoria">Otros Productos</a>
+        </div>
+    </header>
+
+    <div class="productos-container">
+        <div class="producto">
+            <img src="prod3.jpg" alt="plancha de pelo">
+            <h3>Planchita de pelo OSR con control de temperatura </h3>
+            <p class="precio">$23000</p>
+        </div>
+
+        <div class="producto">
+            <img src="prod6.jpg" alt="parlante de 6.5">
+            <h3>PARLANTE DE 6.5 08K CON MANIJA</h3>
+            <p class="precio">$40000</p>
+        </div>
+
+        <div class="producto">
+            <img src="prod8.jpg" alt="barra de sonido">
+            <h3>BARRA DE SONIDO</h3>
+            <p class="precio">$24000</p>
+            <p> con luz RGB Bluetooth led recargable, excelente sonido y diseño</p>
+        </div>
+        
+        <div class="producto">
+            <img src="prod11.jpg" alt="Camara EXTERIOR">
+            <h3>CÁMARA EXTERIOR MARCA ORYX</h3>
+            <p class="precio">$40000</p>
+            <p> DOMO PATRULLADOR, DETECTOR DE MOVIMIENTO</p>
+        </div>
+        
+    </div>
+
+    <script>
+        document.getElementById('toggleCategorias').addEventListener('click', function() {
+            var categorias = document.getElementById('categorias');
+            categorias.classList.toggle('active');  // Alterna la clase 'active' para mostrar/ocultar el menú
+        });
+    </script>
+
+    <footer>
+        WhatsApp: 2213073595 <a href="https://wa.me/2213073595" target="_blank">Contactar por WhatsApp</a>
+    </footer>
+</body>
+</html>

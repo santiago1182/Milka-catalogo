@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="icon" href="tienda.png" type="image/png">
+    <title>Ver Productos</title>
+</head>
+<body>
+    
+    <header>
+        <button id="toggleCategorias" class="btn-toggle">Cambiar Sección</button>
+        <div class="categorias" id="categorias">
+            <a href="bazar.html" class="btn-categoria">Bazar</a>
+            <a href="cocina.html" class="btn-categoria">cocina</a>
+            <a href="electronica.html" class="btn-categoria">Electrónica</a>
+            <a href="herramientas.html" class="btn-categoria">Herramientas</a>
+            <a href="otros-productos.html" class="btn-categoria">Otros Productos</a>
+        </div>
+    </header>
+
+    <div class="productos-container">
+ 
+        <div class="producto">
+            <img src="prod4.jpg" alt="nivel laser">
+            <h3>Nivel laser con regla</h3>
+            <p class="precio">$20000</p>
+            <p></p>
+        </div>
+
+        <div class="producto">
+            <img src="prod10.jpg" alt="Taladro INALÁMBRICO">
+            <h3>TALADRO INALÁMBRICO</h3>
+            <p class="precio">$65000</p>
+            <p>PROFECIONAL 
+                RECARGABLE </p>
+        </div>
+
+        <div class="producto">
+            <img src="prod13.jpg" alt="Kit de llaves TUBO 108 PIEZAS">
+            <h3>Kit de llaves TUBO 108 PIEZAS</h3>
+            <p class="precio">$70000</p>
+            <p></p>
+        </div>
+
+    </div>
+    <script>
+        document.getElementById('toggleCategorias').addEventListener('click', function() {
+            var categorias = document.getElementById('categorias');
+            categorias.classList.toggle('active');  // Alterna la clase 'active' para mostrar/ocultar el menú
+        });
+    </script>
+    <footer>
+        WhatsApp: 2213073595 <a href="https://wa.me/2213073595" target="_blank">Contactar por WhatsApp</a>
+    </footer>
+</body>
+</html>
