@@ -7,9 +7,12 @@ body {
     background-color: #f4f4f4;
     color: black;
     background-image: url('fonfo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover; /* La imagen se ajusta sin deformarse */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    height: 100vh; /* Asegura que cubra toda la pantalla */
+    margin: 0;
+    padding: 0;
 }
 
 header {
