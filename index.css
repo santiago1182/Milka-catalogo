@@ -1,6 +1,7 @@
 
 
-body { 
+
+body {
     font-family: Arial, sans-serif;
     text-align: center;
     margin: 0;
@@ -8,14 +9,35 @@ body {
     background-color: #f4f4f4;
     color: black;
     background-image: url('fonfo.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 100vh;
+    background-size: cover; /* La imagen se ajusta sin deformarse */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que se repita */
+    height: 100vh; /* Asegura que cubra toda la pantalla */
     width: 100%;
-    overflow-x: hidden;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
+.close-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    background: red;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
 
 header {
     background-color: #000000;
@@ -37,6 +59,7 @@ header {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
+
 footer {
     width: 100%;
     padding: 20px;
@@ -45,6 +68,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
+
 }
 
 .btn {
@@ -61,24 +85,20 @@ footer {
     border: none;
     cursor: pointer;
 }
-
 .btn:hover {
     background: linear-gradient(135deg, #0056b3, #004095);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
-
 .btn:active {
     transform: scale(0.95);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
-
 .menu {
     display: none;
     background-color: rgba(51, 51, 51, 0.8);
     top: 100px;
     right: 0;
-    transition: all 0.3s ease-in-out;
     width: 200px;
     border-radius: 10px;
     padding: 20px;
@@ -87,8 +107,8 @@ footer {
     top: 50%; 
     left: 50%; 
     transform: translate(-50%, -50%); 
+    
 }
-
 .menu a {
     display: block;
     margin: 10px 0;
@@ -106,80 +126,4 @@ footer {
     background: linear-gradient(135deg, #0056b3, #004095);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Media Queries */
-
-/* Pantallas medianas (tablets y pantallas más pequeñas) */
-@media (max-width: 1024px) {
-    .banner {
-        height: 250px;
-        font-size: 24px;
-    }
-
-    .menu {
-        width: 100%;
-        top: 50px;
-        left: 0;
-        transform: none;
-    }
-
-    footer {
-        padding: 10px;
-    }
-
-    .btn {
-        font-size: 18px;
-        padding: 12px 24px;
-    }
-}
-
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 768px) {
-    body {
-        background-image: url('fonfo-mobile.jpg');
-    }
-
-    header {
-        font-size: 20px;
-    }
-
-    .banner {
-        height: 180px;
-        font-size: 20px;
-    }
-
-    .menu {
-        width: 100%;
-        padding: 10px;
-        position: relative;
-        top: 0;
-        transform: none;
-    }
-
-    footer {
-        position: relative;
-        padding: 5px;
-    }
-
-    .btn {
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
-
-/* Pantallas muy pequeñas (dispositivos móviles más compactos) */
-@media (max-width: 480px) {
-    .banner {
-        font-size: 18px;
-    }
-
-    header {
-        font-size: 18px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 8px 16px;
-    }
 }
