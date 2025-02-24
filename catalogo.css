@@ -54,10 +54,6 @@ header {
     object-fit: cover; 
 }
 
-.producto:hover {
-    transform: translateY(-10px);
-}
-
 .producto img {
     width: 100%;
     height: auto;
