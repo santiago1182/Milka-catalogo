@@ -225,7 +225,10 @@ footer {
     text-transform: uppercase;
     margin-top: 10px;
 }
-
+.productos-container img {
+    max-width: 100%;
+    height: auto;
+}
 .btn-cart:hover {
     background: linear-gradient(135deg, #218838, #1e7e34);
     transform: scale(1.05);
@@ -305,7 +308,10 @@ footer {
         gap: 10px;
         padding: 10px;
     }
-
+    .productos-container img {
+    max-width: 100%;
+    height: auto;
+}
     .btn, .btn-toggle {
         padding: 10px 15px;
         font-size: 14px;
