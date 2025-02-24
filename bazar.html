@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="icon" href="tienda.png" type="image/png">
+    <title>Ver Productos</title>
+</head>
+<body>
+    
+    <header>
+        <h3 class="categoria">Bazar</h3>
+        <button id="toggleCategorias" class="btn-toggle">Cambiar Sección</button>
+        <div class="categorias" id="categorias">
+            <a href="bazar.html" class="btn-categoria">Bazar</a>
+            <a href="cocina.html" class="btn-categoria">Cocina</a>
+            <a href="electronica.html" class="btn-categoria">Electrónica</a>
+            <a href="herramientas.html" class="btn-categoria">Herramientas</a>
+            <a href="otros-productos.html" class="btn-categoria">Otros Productos</a>
+        </div>
+    </header>
+
+    <div class="productos-container">
+        <div class="producto">
+            <img src="prod12.jpg" alt="Tender 3 niveles">
+            <h3 class="nombre-producto">Tender vertical de 3 niveles</h3>
+            <p class="precio" data-precio="42000">$42,000</p>
+            <p>Tender de 3 niveles para colgar ropa.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="prod15.jpg" alt="Organizador de zapatos 4 niveles">
+            <h3 class="nombre-producto">Organizador de zapatos 4 niveles</h3>
+            <p class="precio" data-precio="26000">$26,000</p>
+            <p>Organizador de 4 niveles para almacenar zapatos.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod19.jpg" alt="Cajita de 24 marcadores">
+            <h3 class="nombre-producto">Cajita de 24 marcadores</h3>
+            <p class="precio" data-precio="24000">$24,000</p>
+            <p>Caja con 24 marcadores de doble punta.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod20.jpg" alt="Silla gamer">
+            <h3 class="nombre-producto">Silla gamer</h3>
+            <p class="precio" data-precio="175000">$175,000</p>
+            <p>Silla de oficina ajustable, reclinable, con soporte para cuello y lumbar.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod21.jpg" alt="Lámpara de luz LED">
+            <h3 class="nombre-producto">Lámpara LED para escritura</h3>
+            <p class="precio" data-precio="20000">$20,000</p>
+            <p>Lámpara con luz LED, ideal para escribir y leer cómodamente.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod27.jpg" alt="Mochila triple con carro regulable de altura">
+            <h3 class="nombre-producto">Mochila con carro regulable</h3>
+            <p class="precio" data-precio="24000">$24,000</p>
+            <p>Mochila con ruedas y carro ajustable en altura.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod28.jpg" alt="Reloj Ultra 3">
+            <h3 class="nombre-producto">Reloj Ultra 3</h3>
+            <p class="precio" data-precio="34000">$34,000</p>
+            <p>Reloj con 7 correas intercambiables.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod32.jpg" alt="Marcadores x60">
+            <h3 class="nombre-producto">Marcadores x60</h3>
+            <p class="precio" data-precio="35000">$35,000</p>
+            <p>Set de 60 marcadores de doble punta.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod34.jpg" alt="Mochila impermeable">
+            <h3 class="nombre-producto">Mochila impermeable</h3>
+            <p class="precio" data-precio="35000">$35,000</p>
+            <p>Mochila resistente al agua, ideal para uso diario.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod35.jpg" alt="Tender con gancho">
+            <h3 class="nombre-producto">Tender con gancho</h3>
+            <p class="precio" data-precio="20000">$20,000</p>
+            <p>Tender plegable con 22 broches, disponible en tres colores.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod37.jpg" alt="Estantería de baño Toilet Rack">
+            <h3 class="nombre-producto">Estantería de baño Toilet Rack</h3>
+            <p class="precio" data-precio="37000">$37,000</p>
+            <p>Estantería de acero inoxidable, medida 1.60 x 47 x 25 cm.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod38.jpg" alt="Acolchados de 2½">
+            <h3 class="nombre-producto">Acolchados de 2½</h3>
+            <p class="precio" data-precio="28000">$28,000</p>
+            <p>Acolchados de wata, ideales para invierno.</p>
+            <button class="btn" onclick="addToCart(this)">Añadir al carrito</button>
+        </div> 
+
+        
+        
+    </div>
+    
+    <!-- Carrito de compras -->
+    <div id="cart" class="cart">
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p> <!-- El total se muestra aquí -->
+        <button onclick="sendWhatsApp()">Enviar pedido</button>
+        <button onclick="clearCart()">Vaciar carrito</button>
+        <button onclick="toggleCart()">Cerrar carrito</button>
+    </div>
+
+    <!-- Botón para abrir el carrito -->
+    <button class="btn-cart-toggle" onclick="toggleCart()">Carrito</button>
+
+    <script src="cart.js"></script>
+
+    
+    <footer>
+        WhatsApp: 2213073595 <a href="https://wa.me/2213073595" target="_blank">Contactar por WhatsApp</a>
+    </footer>
+</body>
+</html>

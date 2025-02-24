@@ -1,0 +1,313 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    background-image: url('fonfo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh; 
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    display: flex;        
+    justify-content: center;  
+    align-items: center;  
+    padding: 10px;
+}
+
+.productos-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+.categoria{
+    text-align: left;
+    margin: 0;
+}
+.producto {
+    width: 300px;
+    max-width: 100%;
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto; 
+    min-height: 200px; 
+}
+
+.producto img {
+    width: 100%;
+    max-height: 200px; 
+    object-fit: cover; 
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 20px;
+    margin: 15px 0 5px;
+}
+
+.precio {
+    font-size: 18px;
+    color: #007bff;
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004095);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+}
+
+.btn:active {
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn-toggle {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(135deg, #28a745, #218838);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+}
+
+.btn-toggle:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: scale(1.05);
+}
+
+.btn-toggle:active {
+    transform: scale(0.95);
+}
+
+.categorias {
+    display: none;  /* Ocultamos el menú por defecto */
+    flex-direction: column;  /* Asegura que los botones estén en columna */
+    align-items: center;
+    gap: 20px;
+    padding: 40px;
+    background-color: rgba(51, 51, 51, 0.9);
+    border-radius: 15px;
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.categorias.active {
+    display: flex;  /* Mostramos el menú cuando tiene la clase 'active' */
+}
+
+.btn-categoria {
+    width: 100%;
+    padding: 10px 6px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-categoria:hover {
+    background: linear-gradient(135deg, #0056b3, #004095);
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Estilos del carrito */
+.cart {
+    position: fixed;
+    right: -350px; /* Inicia fuera de la pantalla */
+    top: 20px;
+    background-color: #fff;
+    width: 300px;
+    height: 400px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.cart.open {
+    right: 0; /* Se desplaza al hacer toggle */
+}
+
+.cart-menu h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.cart-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.cart-menu ul li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.btn-cart {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    background: linear-gradient(135deg, #28a745, #218838);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+.btn-cart:hover {
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    transform: scale(1.05);
+}
+
+.btn-cart:active {
+    transform: scale(0.95);
+}
+
+/* Botón para abrir el carrito */
+.btn-cart-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 50%;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-cart-toggle:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+.cart button {
+    color: white;
+    border: none;
+    border-radius: 30px; /* Bordes más redondeados */
+    padding: 10px 20px; /* Espaciado interior */
+    font-size: 16px; /* Tamaño de texto */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición para el hover */
+    background-color: #007BFF !important; /* Azul para el primer botón */
+}
+
+.cart button:first-child:hover {
+    background-color: #003d7e !important; /* Azul más oscuro al pasar el ratón */
+}
+
+/* Estilo para el botón de "Cerrar carrito" */
+.cart button:last-child {
+    background-color: #FF5733 !important; /* Rojo para el segundo botón */
+}
+
+.cart button:last-child:hover {
+    background-color: #cc4627 !important; /* Rojo más oscuro al pasar el ratón */
+}
+
+@media (max-width: 768px) {
+    .productos-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .producto {
+        width: 100%;
+    }
+
+    .categorias {
+        width: 100%;
+    }
+
+    .btn-toggle {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .productos-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .btn, .btn-toggle {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}

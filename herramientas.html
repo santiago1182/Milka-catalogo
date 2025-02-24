@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="icon" href="tienda.png" type="image/png">
+    <title>Ver Productos</title>
+</head>
+<body>
+    
+    <header>
+        <h3 class="categoria">Herramientas</h3>
+        <button id="toggleCategorias" class="btn-toggle">Cambiar Sección</button>
+        <div class="categorias" id="categorias">
+            <a href="bazar.html" class="btn-categoria">Bazar</a>
+            <a href="cocina.html" class="btn-categoria">Cocina</a>
+            <a href="electronica.html" class="btn-categoria">Electrónica</a>
+            <a href="herramientas.html" class="btn-categoria">Herramientas</a>
+            <a href="otros-productos.html" class="btn-categoria">Otros Productos</a>
+        </div>
+    </header>
+
+    <div class="productos-container">
+ 
+        <div class="producto">
+            <img src="prod4.jpg" alt="Nivel laser">
+            <h3 class="nombre-producto">Nivel Láser con Regla</h3>
+            <p class="precio" data-precio="20000">$20,000</p>
+            <p>Herramienta para nivelar superficies con precisión, incluye regla para facilitar el uso.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod10.jpg" alt="Taladro Inalámbrico">
+            <h3 class="nombre-producto">Taladro Inalámbrico</h3>
+            <p class="precio" data-precio="65000">$65,000</p>
+            <p>Herramienta recargable profesional para perforar materiales diversos.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod13.jpg" alt="Kit de llaves Tubo 108 Piezas">
+            <h3 class="nombre-producto">Kit de Llaves Tubo 108 Piezas</h3>
+            <p class="precio" data-precio="70000">$70,000</p>
+            <p>Set de 108 piezas, adecuado para una variedad de trabajos de mantenimiento.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod30.jpg" alt="Cortadora de Pasto Inalámbrica">
+            <h3 class="nombre-producto">Cortadora de Pasto Inalámbrica</h3>
+            <p class="precio" data-precio="390000">$390,000</p>
+            <p>Ancho de corte 430mm<br>Altura de corte ajustable de 25 a 75mm<br>Contenedor de césped de 2.45 litros<br>Peso: 14.2kg<br>Doble batería de alta duración<br>6 posiciones ajustables para mayor comodidad.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+        
+        <div class="producto">
+            <img src="prod36.jpg" alt="Juego de Pinzas X3">
+            <h3 class="nombre-producto">Juego de Pinzas X3</h3>
+            <p class="precio" data-precio="18000">$18,000</p>
+            <p>Set de 3 pinzas de diferentes tamaños y formas, diseñado para trabajos de precisión y ajustes pequeños.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+    </div>
+    
+    <div id="cart" class="cart">
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p> <!-- El total se muestra aquí -->
+        <button onclick="sendWhatsApp()">Enviar pedido</button>
+        <button onclick="clearCart()">Vaciar carrito</button>
+        <button onclick="toggleCart()">Cerrar carrito</button>
+    </div>
+
+    <!-- Botón para abrir el carrito -->
+    <button class="btn-cart-toggle" onclick="toggleCart()">Carrito</button>
+
+    <script src="cart.js"></script>
+    <footer>
+        WhatsApp: 2213073595 <a href="https://wa.me/2213073595" target="_blank">Contactar por WhatsApp</a>
+    </footer>
+</body>
+</html>

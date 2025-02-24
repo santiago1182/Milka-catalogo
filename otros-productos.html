@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="icon" href="tienda.png" type="image/png">
+    <title>Ver Productos</title>
+</head>
+<body>
+    
+    <header>
+        <h3 class="categoria">Otros Productos</h3>
+        <button id="toggleCategorias" class="btn-toggle">Cambiar Sección</button>
+        <div class="categorias" id="categorias">
+            <a href="bazar.html" class="btn-categoria">Bazar</a>
+            <a href="cocina.html" class="btn-categoria">Cocina</a>
+            <a href="electronica.html" class="btn-categoria">Electrónica</a>
+            <a href="herramientas.html" class="btn-categoria">Herramientas</a>
+            <a href="otros-productos.html" class="btn-categoria">Otros Productos</a>
+        </div>
+    </header>
+    
+    <div class="productos-container">
+
+        <div class="producto">
+            <img src="prod17.jpg" alt="Soporte de TV">
+            <h3 class="nombre-producto">Soporte de TV</h3>
+            <p class="precio" data-precio="35000">$35,000</p>
+            <p>Soporte ajustable de doble brazo compatible con televisores de 40" a 80" pulgadas.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+
+        <div class="producto">
+            <img src="prod18.jpg" alt="Champanera Bluetooth">
+            <h3 class="nombre-producto">Champanera Bluetooth</h3>
+            <p class="precio" data-precio="40000">$40,000</p>
+            <p>Parlante Bluetooth recargable con capacidad de 7 litros, luz multicolor y sonido potente. Fabricado en plástico resistente, incluye caja y base antideslizante para mayor estabilidad. Recargable mediante puerto USB.</p>
+            <button class="btn" onclick="addToCart(this)">Agregar al carrito</button>
+        </div>
+
+    </div>
+
+    <div id="cart" class="cart">
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p> <!-- El total se muestra aquí -->
+        <button onclick="sendWhatsApp()">Enviar pedido</button>
+        <button onclick="clearCart()">Vaciar carrito</button>
+        <button onclick="toggleCart()">Cerrar carrito</button>
+    </div>
+
+    <!-- Botón para abrir el carrito -->
+    <button class="btn-cart-toggle" onclick="toggleCart()">Carrito</button>
+
+    <script src="cart.js"></script>
+
+    <footer>
+        WhatsApp: 2213073595 
+        <a href="https://wa.me/2213073595" target="_blank">Contactar por WhatsApp</a>
+    </footer>
+
+</body>
+</html>
