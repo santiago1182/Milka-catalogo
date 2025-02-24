@@ -301,7 +301,7 @@ footer {
 
 @media (max-width: 480px) {
     .productos-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
         gap: 10px;
         padding: 10px;
     }
