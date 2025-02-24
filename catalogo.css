@@ -17,6 +17,10 @@ header {
     text-align: center;
     font-size: 24px;
     color: white;
+    display: flex;        
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px;
 }
 
 .productos-container {
@@ -25,7 +29,10 @@ header {
     gap: 20px;
     padding: 40px;
 }
-
+.categoria{
+    text-align: left;
+    margin: 0;
+}
 .producto {
     width: 300px;
     max-width: 100%;
