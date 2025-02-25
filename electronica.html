@@ -129,11 +129,12 @@
     </div>
 
     <div id="cart" class="cart">
-        <button onclick="toggleCart()">Ver Carrito</button>
-        <div id="cart-items"></div>
-        <p id="cart-total">Total: $0.00</p>
-        <button onclick="sendWhatsApp()">Enviar por WhatsApp</button>
-        <button onclick="clearCart()">Vaciar Carrito</button>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p> <!-- El total se muestra aquí -->
+        <button onclick="sendWhatsApp()">Enviar pedido</button>
+        <button onclick="clearCart()">Vaciar carrito</button>
+        <button onclick="toggleCart()">Cerrar carrito</button>
+    </div>
     </div>
     <button class="btn-cart-toggle" onclick="toggleCart()">Carrito</button>
     <footer>
