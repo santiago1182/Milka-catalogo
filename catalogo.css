@@ -300,9 +300,12 @@ footer {
 
 @media (max-width: 480px) {
     .productos-container {
-        grid-template-columns: 2fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 10px;
         padding: 10px;
+    }
+    .producto {
+        max-width: 100%; 
     }
     .productos-container img {
     max-width: 100%;
