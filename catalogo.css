@@ -300,19 +300,22 @@ footer {
 
 @media (max-width: 480px) {
     .productos-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        padding: 10px;
+        grid-template-columns: repeat(2, 1fr); /* Sigue en 2 columnas */
+        gap: 15px; /* Aumentamos el espacio entre los productos */
+        padding: 15px; /* Un poco más de padding */
     }
+
     .producto {
-        max-width: 100%; 
+        max-width: 140px; /* Reducimos el tamaño de los rectángulos */
+        padding: 10px; /* Reducimos el padding */
     }
-    .productos-container img {
-    max-width: 100%;
-    height: auto;
-}
-    .btn, .btn-toggle {
-        padding: 10px 15px;
+
+    .producto img {
+        max-height: 120px; /* Hacemos la imagen más pequeña */
+    }
+
+    .btn {
         font-size: 14px;
+        padding: 8px 12px;
     }
 }
