@@ -78,3 +78,27 @@ function clearCart() {
     cart = []; 
     displayCart(); 
 }
+
+function abrirModal(elemento) {
+    let modal = document.getElementById("modalProducto");
+
+    // Extrae datos del producto
+    let img = elemento.querySelector("img").src;
+    let nombre = elemento.querySelector(".nombre-producto").textContent;
+    let precio = elemento.querySelector(".precio").textContent;
+    let descripcion = elemento.querySelector("p:nth-of-type(2)").textContent;
+
+    // Asigna los valores al modal
+    document.getElementById("modal-img").src = img;
+    document.getElementById("modal-nombre").textContent = nombre;
+    document.getElementById("modal-precio").textContent = precio;
+    document.getElementById("modal-descripcion").textContent = descripcion;
+
+    // Muestra el modal
+    modal.style.display = "flex";
+}
+
+function cerrarModal() {
+    document.getElementById("modalProducto").style.display = "none";
+}
+
