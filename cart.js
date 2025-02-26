@@ -4,7 +4,9 @@ document.getElementById('toggleCategorias').addEventListener('click', function()
 });
 let cart = [];
 
-
+function toggleImagen(elemento) {
+    elemento.classList.toggle("ampliada");
+}
 function addToCart(button) {
     const productElement = button.closest('.producto'); 
     const name = productElement.querySelector('.nombre-producto').textContent; 
@@ -78,6 +80,16 @@ function clearCart() {
     cart = []; 
     displayCart(); 
 }
+document.addEventListener("DOMContentLoaded", function () {
+    // Selecciona todos los productos
+    let productos = document.querySelectorAll(".producto");
+
+    productos.forEach(producto => {
+        producto.addEventListener("click", function () {
+            abrirModal(this);
+        });
+    });
+});
 
 function abrirModal(elemento) {
     let modal = document.getElementById("modalProducto");
