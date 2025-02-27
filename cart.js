@@ -114,4 +114,9 @@ function cerrarModal() {
     document.getElementById("modalProducto").style.display = "none";
 }
 
+document.querySelectorAll('.btn').forEach(boton => {
+    boton.addEventListener('click', (event) => {
+        event.stopPropagation(); // Evita que el clic se propague al contenedor
+    });
+});
 
