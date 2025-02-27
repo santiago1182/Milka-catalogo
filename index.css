@@ -76,7 +76,7 @@ footer {
     padding: 15px 30px;
     font-size: 20px;
     font-weight: bold;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #000000, #000000);
     color: white;
     text-decoration: none;
     border-radius: 30px;
@@ -86,7 +86,7 @@ footer {
     cursor: pointer;
 }
 .btn:hover {
-    background: linear-gradient(135deg, #0056b3, #004095);
+    background: linear-gradient(135deg, #262728, #2c2e30);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
@@ -113,7 +113,7 @@ footer {
     display: block;
     margin: 10px 0;
     padding: 12px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #000000, #000000);
     color: white;
     text-align: center;
     border-radius: 8px;
@@ -123,7 +123,7 @@ footer {
 }
 
 .menu a:hover {
-    background: linear-gradient(135deg, #0056b3, #004095);
+    background: linear-gradient(135deg, #1d1e1f, #36393c);
     transform: scale(1.05);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
