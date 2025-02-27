@@ -80,7 +80,7 @@ header {
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #000000, #000000);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     border: none;
@@ -89,7 +89,7 @@ header {
 }
 
 .btn:hover {
-    background: linear-gradient(135deg, #0056b3, #004095);
+    background: linear-gradient(135deg, #101010, #242424);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
     transform: scale(1.05);
 }
@@ -104,7 +104,7 @@ header {
     font-size: 16px;
     font-weight: bold;
     color: white;
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #890505, #6a0202);
     border: none;
     border-radius: 25px;
     cursor: pointer;
@@ -115,7 +115,7 @@ header {
 }
 
 .btn-toggle:hover {
-    background: linear-gradient(135deg, #218838, #1e7e34);
+    background: linear-gradient(135deg, #5b0101, #450101);
     transform: scale(1.05);
 }
 
@@ -152,13 +152,13 @@ header {
     color: white;
     text-decoration: none;
     border-radius: 8px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
+    background: linear-gradient(135deg, #000000, #000000);
     text-align: center;
     transition: all 0.3s ease-in-out;
 }
 
 .btn-categoria:hover {
-    background: linear-gradient(135deg, #0056b3, #004095);
+    background: linear-gradient(135deg, #202121, #2d2d2e);
     transform: scale(1.05);
 }
 
@@ -215,7 +215,7 @@ footer {
     color: white;
     text-decoration: none;
     border-radius: 25px;
-    background: linear-gradient(135deg, #28a745, #218838);
+    background: linear-gradient(135deg, #820202, #6e0101);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
     border: none;
@@ -228,7 +228,7 @@ footer {
     height: auto;
 }
 .btn-cart:hover {
-    background: linear-gradient(135deg, #218838, #1e7e34);
+    background: linear-gradient(135deg, #530101, #520101);
     transform: scale(1.05);
 }
 
@@ -241,7 +241,7 @@ footer {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    background-color: #28a745;
+    background-color: #860202;
     color: white;
     padding: 15px 20px;
     border-radius: 50%;
@@ -252,7 +252,7 @@ footer {
 }
 
 .btn-cart-toggle:hover {
-    background-color: #218838;
+    background-color: #560101;
     transform: scale(1.1);
 }
 .cart button {
@@ -263,11 +263,11 @@ footer {
     font-size: 16px; /* Tamaño de texto */
     cursor: pointer;
     transition: background-color 0.3s ease; /* Transición para el hover */
-    background-color: #007BFF !important; /* Azul para el primer botón */
+    background-color: #000000 !important; /* Azul para el primer botón */
 }
 
 .cart button:first-child:hover {
-    background-color: #003d7e !important; /* Azul más oscuro al pasar el ratón */
+    background-color: #000000 !important; /* Azul más oscuro al pasar el ratón */
 }
 
 /* Estilo para el botón de "Cerrar carrito" */
